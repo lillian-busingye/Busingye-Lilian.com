@@ -5,21 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lilian's website</title>
-    <link rel="stylesheet" href="/Busingye-Lilian.com/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/Busingye-Lilian.com/style.css">
 </head>
 
 <body>
-    <div class="box1" style="display: flex; gap: 30px;">
-    <div>
-    <h1>Welcome to my website.</h1>
-    <h2>ABOUT ME</h2>
-    <p>Hey I'm Busingye lilian a passionate frontend developer with a keen eye for design and user experience.</p> 
-    <p>I specialize in creating responsive, accessible, and visually appealing websites.</p>
-    <p>I'm proficient in HTML, CSS, JavaScript, and various frontend frameworks like React and Vue.js.</p>
-    </div>
-    <div><img src="/Busingye-Lilian.com/image.png" alt="my picture" style="width: 30%;"></div>
-    </div>
+    <header class="header">
+        <a href="#" class="logo">PORTFOLIO</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, Its Me</h3>
+            <h1>Busingye Lilian</h1>
+            <h3>And I'm a <span>Frontend Developer.</span></h3>
+            <p>I'm a passionate frontend developer with a keen eye for design and user experience. I specialize in creating responsive, accessible, and visually appealing websites. I'm proficient in HTML, CSS, JavaScript, and various frontend frameworks like React and Vue.js.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="/Busingye-Lilian.com/image.png" alt="my picture">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/Busingye-Lilian.com/image.png" alt="my picture">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, magni, illo consectetur quaerat non hic minus possimus ut tempora maiores officiis vero autem. Facilis, eos autem nesciunt dolor minima distinctio?</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i> 
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam natus illo saepe quos cupiditate quod ab ut exercitationem expedita, consectetur id aut, odio minima eligendi consequatur dicta recusandae culpa modi.20</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint' ></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam natus illo saepe quos cupiditate quod ab ut exercitationem expedita, consectetur id aut, odio minima eligendi consequatur dicta recusandae culpa modi.20</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt' ></i>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam natus illo saepe quos cupiditate quod ab ut exercitationem expedita, consectetur id aut, odio minima eligendi consequatur dicta recusandae culpa modi.20</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+
+        </form>
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Busingye Lilian | All Rights Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </footer>
+    </section>
     
+
+    <script src="/Busingye-Lilian.com/app.js"></script>
 </body>
 
 </html>
